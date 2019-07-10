@@ -91,7 +91,26 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #ltig-wrapper .ltig-overlay-bar .ltig-overlay-close:hover { color: #000; background: #f1be0f; }
 #ltig-wrapper .ltig-overlay-bar .ltig-overlay-wrapper { position: relative; margin: 0 auto; min-width: 920px;  }
 #ltig-wrapper .ltig-overlay-bar h2 { padding: 0 0 18px; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold_italic'; font-size: 37px; line-height: 38px; letter-spacing: 0.01em; }
-#ltig-wrapper .ltig-overlay-bar p { padding-bottom: 23px; font-family: 'actabold'; font-size: 14px; font-weight: 700; line-height: 17px; color: #fff; letter-spacing: 0.01em; }
+#ltig-wrapper .ltig-overlay-bar p {
+    padding-bottom: 23px !important;
+    font-family: 'actabold';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: #fff !important;
+    letter-spacing: 0.01em;
+}
+
+.content.article, .content.gallery, .content.recipe {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container-full-width {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-width: 100%;
+}
 #ltig-wrapper .ltig-overlay-bar p strong { font-weight: normal; color: #f1be0f; }
 #ltig-wrapper .ltig-overlay-bar p em { font-family: 'actabold_italic'; }
 #ltig-wrapper .ltig-overlay-bar ul { padding: 0px 0 29px; margin: 0px; list-style-type: none; }
@@ -120,7 +139,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1 { margin-bottom: 12px; text-align: center; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold_italic'; font-size: 34px; font-weight: 700; line-height: 34px; letter-spacing: 0.02em; }  
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1 strong { display: block; color: #fff; font-size: 22px; line-height: 26px; font-family: 'actabold'; font-weight: normal; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1:after { content: ""; width: 51px; height: 2px; background: #f1be0f; display: block; margin: 19px auto 0; }
-#ltig-wrapper .ltig-start-overlay .intro-start-overlay p { font-size: 16px; line-height: 20px; color: #fff; font-family: 'actabold'; }
+#ltig-wrapper .ltig-start-overlay .intro-start-overlay p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff !important;
+    font-family: 'actabold';
+}
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn { margin: 30px 0 -24px; display: inline-block; vertical-align: top; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold'; font-size: 26px;  line-height: 38px; text-transform: uppercase; font-family: 'actabold'; border: 3px solid #f1be0f; width: 108px; height: 44px; text-decoration: none; text-align: center; letter-spacing: 0.04em; background: #0c0905; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn:hover { background: #f1be0f; color: #000; }
 
