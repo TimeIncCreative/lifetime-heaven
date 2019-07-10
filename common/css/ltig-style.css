@@ -1,5 +1,5 @@
 #ltig-wrapper, #ltig-wrapper *, #ltig-wrapper *:before, #ltig-wrapper *:after { margin: 0px; padding: 0px; -webkit-font-smoothing: antialiased; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; -webkit-text-size-adjust: none; }
-html, body { margin: 0px; padding: 0px; width: 100%; background: rgb(9, 6, 3); }
+html, body { margin: 0px; padding: 0px; width: 100%; background-color: #fff }
 /*font-family: 'Lato', sans-serif; */
 #ltig-wrapper *:focus { outline: none; }
 
@@ -9,6 +9,48 @@ html, body { margin: 0px; padding: 0px; width: 100%; background: rgb(9, 6, 3); }
 #ltig-wrapper .clear { clear: both; overflow: hidden; height: 0px; width: 100%; }
 #ltig-wrapper img { border: 0px; outline: none; display: block; max-width: 100%; }
 #ltig-wrapper h1, #ltig-wrapper h2, #ltig-wrapper h3, #ltig-wrapper h4, #ltig-wrapper h5, #ltig-wrapper h6, #ltig-wrapper p { margin: 0px; padding: 0px; font-weight: normal; }
+
+#silver-story .wrapper {
+    max-width: 870px;
+    margin: 0 auto;
+}
+
+#silver-story .wrapper h1 {
+    padding: 38px 20px 5px;
+    text-align: center;
+    font-size: 44px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: -1.13px;
+    font-family: 'Playfair Display', serif;
+    background: #fff;
+}
+
+#silver-story .wrapper p {
+    margin-bottom: 27px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    color: #000000;
+    font-family: 'Lora', serif;
+}
+
+#silver-story .wrapper img {
+    border: 0px;
+    outline: none;
+    display: block;
+    max-width: 100%;
+}
+
+#silver-story ul.logos{ padding: 14px 0 15px; list-style: none; text-align: center; }
+#silver-story ul.logos li{ display:inline-block; vertical-align:middle; padding: 0 0 0 16px; position:relative; }
+#silver-story ul.logos li:first-child { padding:0 18px 0 0; }
+#silver-story ul.logos li:first-child:after{ content:"+"; position:absolute; right: -18px; top: 21px; font-size: 28px; color: #000; font-family: 'GeorgiaRegularfont'; }
+#silver-story ul.logos li a { display: block; width: 166px; }
+#silver-story ul.logos li:first-child a{ width: 76px; }
+#silver-story ul.logos li a img { vertical-align:top; }
+#silver-story ul.logos li:last-child { margin-top: 19px; }
 
 #ltig-wrapper { background: #fff; max-width: 1280px; margin: 0 auto; width: 100%; min-height: 700px; background-size: cover; background-repeat: no-repeat; background-position: top center; position: relative; }
 #ltig-wrapper .ltig-wrapper-scroll { width: 100%; height: 100%; overflow: auto; overflow: -moz-scrollbars-none; -ms-overflow-style: none; position: relative; -webkit-overflow-scrolling: touch; }
