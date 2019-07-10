@@ -470,20 +470,30 @@
 		
 		 $('.ltig-mobile-slider').slick({
 		  arrows: false,
-		  dots: true,		  
+		  dots: true,
+		  infinite: false,
+		  initialSlide: 2,					  
 		  responsive: [
 			{
 				breakpoint: 9999,
 				settings: "unslick"
 			},
 			{
-				breakpoint: 767,
-				 settings: {
-						infinite: false,	
-						initialSlide: 2,					
-					}
+				breakpoint: 767,								 
 			}
 		]
+		});
+		
+		var heightchange = function(){
+			$('#ltig-wrapper .ltig-wrapper-inner').css({'height': 'auto'});
+			$('#ltig-wrapper .ltig-wrapper-inner').css({'height': $(window).innerHeight()});
+		}
+		
+		heightchange();
+		
+		$(window).on('resize', function() {
+			$('.ltig-mobile-slider').slick('resize');
+			heightchange();
 		});
 		
     });
