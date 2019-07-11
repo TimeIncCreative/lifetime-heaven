@@ -28,12 +28,13 @@ html, body { margin: 0px; padding: 0px; width: 100%; background-color: #fff }
 }
 
 #silver-story .wrapper p {
-    margin-bottom: 27px;
-    font-size: 22px;
+    margin-bottom: 25px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 35px;
     color: #000000;
     font-family: 'Lora', serif;
+    margin: 0 20px 27px 20px;
 }
 
 #silver-story .wrapper img {
@@ -41,6 +42,18 @@ html, body { margin: 0px; padding: 0px; width: 100%; background-color: #fff }
     outline: none;
     display: block;
     max-width: 100%;
+}
+
+p.tunein{
+	text-align: center;
+}
+
+.component.adhesion-ad .adhesion-ad-container {
+    position: relative;
+    width: 100%;
+    background-color: hsla(0,0%,100%,.95);
+    padding-top: 4px;
+    display: none;
 }
 
 #silver-story ul.logos{ padding: 14px 0 15px; list-style: none; text-align: center; }
@@ -87,7 +100,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #ltig-wrapper .ltig-overlay-bar { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.82); z-index: 9999; display: none; overflow: auto; overflow: -moz-scrollbars-none; -ms-overflow-style: none; -webkit-overflow-scrolling: touch; }
 #ltig-wrapper .ltig-overlay-bar::-webkit-scrollbar { width: 0 !important; height: 0px !important; }
 #ltig-wrapper .ltig-overlay-bar .ltig-overlay-inner { width: 100%; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; min-width: 980px; }
-#ltig-wrapper .ltig-overlay-bar .ltig-overlay-close { position: absolute; top: 25px; right: 66px; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold'; font-size: 16px; line-height: 31px; text-transform: uppercase; font-family: 'actabold'; border: 4px solid #f1be0f; width: 77px; height: 38px; text-decoration: none; text-align: center; }
+#ltig-wrapper .ltig-overlay-bar .ltig-overlay-close { position: absolute; top: 25px; right: 66px; color: #f1be0f; font-family: 'actabold'; font-size: 16px; line-height: 31px; text-transform: uppercase; font-family: 'actabold'; border: 4px solid #f1be0f; width: 77px; height: 38px; text-decoration: none; text-align: center; }
 #ltig-wrapper .ltig-overlay-bar .ltig-overlay-close:hover { color: #000; background: #f1be0f; }
 #ltig-wrapper .ltig-overlay-bar .ltig-overlay-wrapper { position: relative; margin: 0 auto; min-width: 920px;  }
 #ltig-wrapper .ltig-overlay-bar h2 { padding: 0 0 18px; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold_italic'; font-size: 37px; line-height: 38px; letter-spacing: 0.01em; }
@@ -133,7 +146,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 #ltig-wrapper .ltig-overlay-bar .top-tile a { display: block; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; position: relative; }
 #ltig-wrapper .ltig-overlay-bar .top-tile a .name { color: #f1be0f; font-family: 'actabold'; font-size: 17px; line-height: 19px; padding: 0 0 0 8px; letter-spacing: 0.02em; }
 
-#ltig-wrapper .ltig-start-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.77); z-index: 9999; display: block; }
+#ltig-wrapper .ltig-start-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.77); z-index: 9; display: block; }
 #ltig-wrapper .ltig-start-overlay .ltig-start-overlay-inner { width: 100%; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay { padding: 30px 20px 0px; max-width: 392px; margin: 0px auto; border: 3px solid #f1be0f; text-align: center; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1 { margin-bottom: 12px; text-align: center; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold_italic'; font-size: 34px; font-weight: 700; line-height: 34px; letter-spacing: 0.02em; }  
@@ -145,7 +158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     color: #fff !important;
     font-family: 'actabold';
 }
-#ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn { margin: 30px 0 -24px; display: inline-block; vertical-align: top; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold'; font-size: 26px;  line-height: 38px; text-transform: uppercase; font-family: 'actabold'; border: 3px solid #f1be0f; width: 108px; height: 44px; text-decoration: none; text-align: center; letter-spacing: 0.04em; background: #0c0905; }
+#ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn { margin: 30px 0 -24px; display: inline-block; vertical-align: top; color: #f1be0f; font-family: 'actabold'; font-size: 26px;  line-height: 38px; text-transform: uppercase; font-family: 'actabold'; border: 3px solid #f1be0f; width: 108px; height: 44px; text-decoration: none; text-align: center; letter-spacing: 0.04em; background: #0c0905; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn:hover { background: #f1be0f; color: #000; }
 
 .touch-devices-body #ltig-wrapper .ltig-right-wrapper-arrow, .touch-devices-body #ltig-wrapper .ltig-left-wrapper-arrow { display: none !important; }
@@ -199,7 +212,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	#ltig-wrapper .slick-arrow.slick-hidden { display: none; }
 	#ltig-wrapper .ltig-wrapper-inner { min-width: 100%; display: block; display: table; }
 	#ltig-wrapper #ltig-content-part .people-list { width: 196px; margin: 0 auto; }
-	#ltig-wrapper .slick-dots { padding: 0px; margin: 0px; list-style-type: none; position: absolute; bottom: 10px; left: 0px; width: 100%; } 
+	#ltig-wrapper .slick-dots { padding: 0px; margin: 0px; list-style-type: none; position: absolute; bottom: 0px; left: 0px; width: 100%; } 
 	#ltig-wrapper .slick-dots li { display: inline-block; vertical-align: top; padding: 0 3px; }  
 	#ltig-wrapper .slick-dots li button { border: 0px; -webkit-appearance: none; appearance: none; width: 7px; height: 7px; background: #fff; border-radius: 100%; -webkit-border-radius: 100%; -moz-border-radius: 100%; -ms-border-radius: 100%; -o-border-radius: 100%; display: block; font-size: 0px; line-height: 0px; }
 	#ltig-wrapper .slick-dots li.slick-active button { background: #f1be0f; }
