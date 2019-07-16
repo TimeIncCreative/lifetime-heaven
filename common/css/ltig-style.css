@@ -148,7 +148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
 #ltig-wrapper .ltig-start-overlay { position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.77); z-index: 9; display: block; }
 #ltig-wrapper .ltig-start-overlay .ltig-start-overlay-inner { width: 100%; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; }
-#ltig-wrapper .ltig-start-overlay .intro-start-overlay { padding: 30px 20px 0px; max-width: 392px; margin: 0px auto; border: 3px solid #f1be0f; text-align: center; }
+#ltig-wrapper .ltig-start-overlay .intro-start-overlay { padding: 69px 20px 0px; max-width: 392px; margin: 0px auto; border: 3px solid #f1be0f; text-align: center; position: relative; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1 { margin-bottom: 12px; text-align: center; text-shadow: 0 0 4px rgba(0, 0, 0, 0.5); color: #f1be0f; font-family: 'actabold_italic'; font-size: 34px; font-weight: 700; line-height: 34px; letter-spacing: 0.02em; }  
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1 strong { display: block; color: #fff; font-size: 22px; line-height: 26px; font-family: 'actabold'; font-weight: normal; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay h1:after { content: ""; width: 51px; height: 2px; background: #f1be0f; display: block; margin: 19px auto 0; }
@@ -160,6 +160,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn { margin: 30px 0 -24px; display: inline-block; vertical-align: top; color: #f1be0f; font-family: 'actabold'; font-size: 26px;  line-height: 38px; text-transform: uppercase; font-family: 'actabold'; border: 3px solid #f1be0f; width: 108px; height: 44px; text-decoration: none; text-align: center; letter-spacing: 0.04em; background: #0c0905; }
 #ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn:hover { background: #f1be0f; color: #000; }
+#ltig-wrapper .ltig-start-overlay .top-logo { position: absolute; top: -52px; left: 50%; margin-left: -49px; display: block; max-width: 99px; }
 
 .touch-devices-body #ltig-wrapper .ltig-right-wrapper-arrow, .touch-devices-body #ltig-wrapper .ltig-left-wrapper-arrow { display: none !important; }
 
@@ -252,11 +253,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 	
 	#ltig-wrapper .ltig-start-overlay .intro-start-overlay { width: 280px; }
 	#ltig-wrapper .ltig-start-overlay .intro-start-overlay h1 { font-size: 27px; line-height: 30px; }
-	#ltig-wrapper .ltig-start-overlay .intro-start-overlay { padding: 20px 15px 0px; }
+	#ltig-wrapper .ltig-start-overlay .intro-start-overlay { padding: 45px 15px 0px; }
 	#ltig-wrapper .ltig-start-overlay .intro-start-overlay p { font-size: 14px; line-height: 18px; }
 	#ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn { font-size: 20px; width: 88px; height: 37px; line-height: 31px; margin: 20px 0 -18px; }
 	#ltig-wrapper .ltig-start-overlay .intro-start-overlay h1:after { margin: 15px auto 0; }
 	#ltig-wrapper .ltig-right-wrapper-arrow, #ltig-wrapper .ltig-left-wrapper-arrow { display: none !important; }
+	#ltig-wrapper .ltig-start-overlay { z-index: 100; }
+	#ltig-wrapper .ltig-start-overlay .top-logo { max-width: 70px; top: -37px; margin-left: -35px; }  
 		
 }
 
