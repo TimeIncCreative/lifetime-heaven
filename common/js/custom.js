@@ -44,6 +44,7 @@ $(document).ready(function(e) {
 		
 		$('#ltig-wrapper .ltig-start-overlay .intro-start-overlay .ltig-btn').click(function(e) {
             e.preventDefault();
+			e.stopImmediatePropagation();
 			$('#ltig-wrapper .ltig-start-overlay').fadeOut();
 			if($('#ltig-wrapper').width() < 1280){
 				$('#ltig-wrapper .ltig-left-wrapper-arrow, #ltig-wrapper .ltig-right-wrapper-arrow').css({'display': 'block'});
@@ -52,21 +53,24 @@ $(document).ready(function(e) {
 			}
         });
 		
-        $('#ltig-wrapper #ltig-content-part .people-list li a, #ltig-wrapper #ltig-content-part .lead-tile a').click(function(e) {
+        $('#ltig-wrapper #ltig-content-part .people-list li span[data-value], #ltig-wrapper #ltig-content-part .lead-tile span[data-value]').click(function(e) {
 			e.preventDefault();
+			e.stopImmediatePropagation();
 			$('#ltig-wrapper .ltig-overlay-bar .overlay-style').removeClass('active');
             $('#ltig-wrapper .ltig-overlay-bar').fadeIn();
 			$('#ltig-wrapper .ltig-overlay-bar .overlay-style[data-value='+$(this).attr('data-value')+']').addClass('active');			
         });
 		
-		$('#ltig-wrapper .ltig-overlay-bar ul li a, #ltig-wrapper .ltig-overlay-bar .top-tile a').click(function(e) {
+		$('#ltig-wrapper .ltig-overlay-bar ul li span[data-value], #ltig-wrapper .ltig-overlay-bar .top-tile span[data-value]').click(function(e) {
 			e.preventDefault();
+			e.stopImmediatePropagation();
             $('#ltig-wrapper .ltig-overlay-bar .overlay-style').removeClass('active');
 			$('#ltig-wrapper .ltig-overlay-bar .overlay-style[data-value='+$(this).attr('data-value')+']').addClass('active');
         });
 		
 		$('#ltig-wrapper .ltig-overlay-bar .ltig-overlay-close').click(function(e) {
             e.preventDefault();
+			e.stopImmediatePropagation();
 			 $('#ltig-wrapper .ltig-overlay-bar').fadeOut();
         });
 		
